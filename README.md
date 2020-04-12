@@ -11,11 +11,11 @@ CM-d-MD is a package used for performing the so-called Commute Map directed Mole
 
 Julia packages:
 
-`Julia > 1.2.0` `PyCall`
+`Julia > 1.2.0`, `PyCall`
 
 Others:
 
-`NAMD > 2.9` `MDtraj = 1.9.3`
+`NAMD > 2.9`, `MDtraj = 1.9.3`
 
 ## Installation
 
