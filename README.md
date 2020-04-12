@@ -30,7 +30,7 @@ CM-d-MD could only run under Linux operating system.
    or
 
    ```
-   conda install mdtraj
+   conda install -c conda-forge mdtraj
    ```
 
    Make sure when typing `namd2` command under terminal, you could start the NAMD program.
