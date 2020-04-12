@@ -70,10 +70,15 @@ In the example folder we provide some examples, check the `README.md` there for 
    The first part defines some MD simulation parameters:
 
    `NAMDConfigureFile`: name of NAMD configure file.
+   
    `Iterations`: the iteration number of the CM-d-MD simulation.
+   
    `Steps`: MD steps per iteration.
+   
    `DCDFreq`: frequency of writing DCD file.
+   
    `Nproc`: number of CPU cores to use in the simulation.
+   
    `GPU`: GPU id to use in the simulation. -1 for do not use GPU.
 
    The second part defines parameters about the commute map:
