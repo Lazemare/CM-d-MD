@@ -4,8 +4,7 @@
 
 ## What's this?
 
-CM-d-MD is a package used for performing the so-called Commute Map directed Molecular Dynamics accelerated sampling method. This idea is based on the  Diffusion-Map-
-Directed Molecular Dynamics (https://dx.doi.org/10.1021/jp401911h , https://dx.doi.org/10.1039/c3cp54520b) and the Commute Map (https://dx.doi.org/10.1021/acs.jctc.6b00762).
+CM-d-MD is a package used for performing the so-called Commute Map directed Molecular Dynamics accelerated sampling method. This idea is based on the  Diffusion-Map-Directed Molecular Dynamics (https://dx.doi.org/10.1021/jp401911h , https://dx.doi.org/10.1039/c3cp54520b) and the Commute Map (https://dx.doi.org/10.1021/acs.jctc.6b00762).
 
 
 
