@@ -8,7 +8,7 @@ trajectory,. Return a n×m array, where n is the frame number, m is the atom num
 # Arguments:
 - `t::PyObject`: the trajectory.
 - `regselect::String="all"`: region of the system to calculate RMSD.
-- `strucselect::String="all"`: structure in given region (backbone,
+- `strucselect::String="all"`: structure in given region (all, backbone,
 sidechain, or nonh) to calculate RMSD.
 - `mp::Bool=true`: if use multi-processing.
 
@@ -71,7 +71,7 @@ trajectory,. Return a n×m array, where n is the frame number, m is the residue 
 # Arguments:
 - `t::PyObject`: the trajectory.
 - `regselect::String="all"`: region of the system to calculate RMSD.
-- `strucselect::String="all"`: structure in given region (backbone,
+- `strucselect::String="all"`: structure in given region (all, backbone,
 sidechain, or nonh) to calculate RMSD.
 - `mp::Bool=true`: if use multi-processing.
 
