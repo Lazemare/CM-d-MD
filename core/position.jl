@@ -13,7 +13,7 @@ Return a 3n×m array, where n is the frame number, m is the atom number:
 - `refframe::Int=0`: the reference frame used to align frames.
 - `alignref::String="all"`: structure used to align frames.
 - `regselect::String="all"`: region of the system to get positions.
-- `strucselect::String="all"`: structure in given region (backbone, 
+- `strucselect::String="all"`: structure in given region (all, backbone, 
 sidechain, or nonh) to get positions.
 - `mp::Bool=true`: if use multi-processing.
 
@@ -74,7 +74,7 @@ Return a 3n×m array, where n is the frame number, m is the residue number:
 - `refframe::Int=0`: the reference frame used to align frames.
 - `alignref::String="all"`: structure used to align frames.
 - `regselect::String="all"`: region of the system to get positions.
-- `strucselect::String="all"`: structure in given region (backbone, 
+- `strucselect::String="all"`: structure in given region (all, backbone, 
 sidechain, or nonh) to get positions.
 - `mp::Bool=true`: if use multi-processing.
 
