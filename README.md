@@ -1,6 +1,5 @@
 # CMdMD: Commute Map directed Molecular Dynamics
 
-------
 
 ## What's this?
 
