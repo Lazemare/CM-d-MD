@@ -48,7 +48,7 @@ using direct RMSD algorithm.  Return a n×n array, where n is the frame number.
 - `t::PyObject`: the trajectory.
 - `alignref::String="all"`: structure used to align frames.
 - `regselect::String="all"`: region of the system to calculate RMSD.
-- `strucselect::String="all"`: structure in given region (backbone, 
+- `strucselect::String="all"`: structure in given region (all, backbone, 
 sidechain, or nonh) to calculate RMSD.
 
 See also: [`get_rmsd_qcp`](@ref)
@@ -131,7 +131,7 @@ using QCP algorithm. Return a n×n array, where n is the frame number.
 - `t::PyObject`: the trajectory.
 - `alignref::String="all"`: structure used to align frames.
 - `regselect::String="all"`: region of the system to calculate RMSD.
-- `strucselect::String="all"`: structure in given region (backbone, 
+- `strucselect::String="all"`: structure in given region (all, backbone, 
 sidechain, or nonh) to calculate RMSD.
 - `mp::Bool=true`: if use multi-processing.
 
@@ -258,7 +258,7 @@ frame number, m is the atom number.
 - `alignref::String="all"`: structure used to align frames.
 - `refframe::Int=0`: the reference frame used to calculate RMSD.
 - `regselect::String="all"`: region of the system to calculate RMSD.
-- `strucselect::String="all"`: structure in given region (backbone, 
+- `strucselect::String="all"`: structure in given region (all, backbone, 
 sidechain, or nonh) to calculate RMSD.
 
 See also: [`get_rmsd_by_residues`](@ref)
