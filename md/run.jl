@@ -86,29 +86,29 @@ function runcmdmd(configfile::String)
         println("Start to calculate Order Parameters and Commute Map ...")
         println("Calculating Order Parameters ...")
         TIME = @timed (
-		if system.orderparam == "rmsd"
-        	if system.rmsdprecision == "residues"
-            	param = get_rmsd_by_residues(traj,system.refframe,system.alignref,
-                   		system.rmsdregionselection,system.rmsdstructureselection)
-        	elseif system.rmsdprecision == "atoms"
-        		param = get_rmsd_by_atoms(traj,system.refframe,system.alignref,
-						system.rmsdregionselection,system.rmsdstructureselection)
+        if system.orderparam == "rmsd"
+            if system.rmsdprecision == "residues"
+                param = get_rmsd_by_residues(traj,system.refframe,system.alignref,
+                           system.rmsdregionselection,system.rmsdstructureselection)
+            elseif system.rmsdprecision == "atoms"
+                param = get_rmsd_by_atoms(traj,system.refframe,system.alignref,
+                        system.rmsdregionselection,system.rmsdstructureselection)
             end
-		elseif system.orderparam == "distance"
-			if system.disprecision == "atoms"
-				param = get_distance_by_atoms(traj,system.disregionselection,
+        elseif system.orderparam == "distance"
+            if system.disprecision == "atoms"
+                param = get_distance_by_atoms(traj,system.disregionselection,
                         system.disstructureselection)[1]
-			elseif system.disprecision == "residues"
-				param = get_distance_by_residues(traj,system.disregionselection,
-						system.disstructureselection)[1]
+            elseif system.disprecision == "residues"
+                param = get_distance_by_residues(traj,system.disregionselection,
+                        system.disstructureselection)[1]
             end
-		elseif system.orderparam == "position"
-			if system.posprecision == "atoms"
-				param = get_position_by_atoms(traj,system.refframe,system.alignref,
-						system.posregionselection,system.posstructureselection)
-			elseif system.posprecision == "residues"
-				param = get_position_by_residues(traj,system.refframe,system.alignref,
-						system.posregionselection,system.posstructureselection)
+        elseif system.orderparam == "position"
+            if system.posprecision == "atoms"
+                param = get_position_by_atoms(traj,system.refframe,system.alignref,
+                        system.posregionselection,system.posstructureselection)
+            elseif system.posprecision == "residues"
+                param = get_position_by_residues(traj,system.refframe,system.alignref,
+                        system.posregionselection,system.posstructureselection)
             end
         end )
         println("Calculation of Order Parameters takes $(TIME[2]) seconds to complete.")
