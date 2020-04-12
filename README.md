@@ -54,4 +54,8 @@ CM-d-MD could only run under Linux operating system.
 
    ## Examples
 
-   In the example folder we provide some examples, check the `README.md` there for more information about how to work with CM-d-MD. 
+   In the example folder we provide some examples, check the `README.md` there for more information about how to work with CM-d-MD.
+
+## Problems
+
+The Koopman reweighting scheme do not work by now, please use default reweighting scheme.
