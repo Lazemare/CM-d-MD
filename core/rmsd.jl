@@ -197,7 +197,7 @@ frame number, m is the residue number.
 - `alignref::String="all"`: structure used to align frames.
 - `refframe::Int=0`: the reference frame used to calculate RMSD.
 - `regselect::String="all"`: region of the system to calculate RMSD.
-- `strucselect::String="all"`: structure in given region (backbone, 
+- `strucselect::String="all"`: structure in given region (all, backbone, 
 sidechain, or nonh) to calculate RMSD.
 
 See also: [`get_rmsd_by_atoms`](@ref)
