@@ -1,0 +1,47 @@
+############## MD parameters ##############
+NAMDConfigureFile       test.conf
+Iterations              10
+Steps                   250000
+DCDFreq                 10
+Nproc                   2
+GPU                     -1 # do not use GPUs
+
+############# map parameters #############
+Selection               "all and protein"
+OrderParameter          "RMSD"
+AlignReference          "all"
+ReferenceFrame          1
+RMSDRegionSelection     "all"
+RMSDStructureSelection  "backbone"
+RMSDPrecision           "residues"
+StretchPrecision        "residues"
+StretchFactor           1.15
+CommuteMap              true
+LagTime                 10
+frequency               1
+
+############# map parameters #############
+Selection               "all and protein"
+OrderParameter          "Distance"
+DisRegionSelection      "all"
+DisStructureSelection   "backbone"
+DisPrecision            "residues"
+StretchPrecision        "residues"
+StretchFactor           1.15
+CommuteMap              true
+LagTime                 10
+frequency               1
+
+############# map parameters #############
+Selection               "all and protein"
+OrderParameter          "Position"
+AlignReference          "all"
+ReferenceFrame          1
+PosRegionSelection      "all"
+PosStructureSelection   "backbone"
+PosPrecision            "residues"
+StretchPrecision        "residues"
+StretchFactor           1.15
+CommuteMap              true
+LagTime                 10
+frequency               1
