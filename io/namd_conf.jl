@@ -46,7 +46,7 @@ Write the NAMD configure file with given coordinates.
 - `coord::String`: name of the coordinate file.
 - `topo::String`: name of the topology file.
 - `steps::Int`: steps to run.
-- `dcdfreq::Int`: frequence of writting DCD file.
+- `dcdfreq::Int`: frequency of writing DCD file.
 """
 function write_conf_namd(configfile::String, output::String, coord::String, topo::String,
                          steps::Int, dcdfreq::Int)
