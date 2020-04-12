@@ -52,9 +52,9 @@ CM-d-MD could only run under Linux operating system.
 
    This will load the CM-d-MD codes and show the CM-d-MD version.
 
-   ## Examples
+## Examples
 
-   In the example folder we provide some examples, check the `README.md` there for more information about how to work with CM-d-MD.
+In the example folder we provide some examples, check the `README.md` there for more information about how to work with CM-d-MD.
 
 ## Problems
 
