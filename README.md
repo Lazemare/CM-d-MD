@@ -37,7 +37,7 @@ CM-d-MD could only run under Linux operating system.
 
 2. Install Julia and PyCall package. You could make a check by typing this command in the Julia REPL, which will give you the version of MDtraj:
 
-   ```
+   ```julia
    using PyCall
    md = pyimport("mdtraj")
    println(md.version.version)
@@ -45,7 +45,7 @@ CM-d-MD could only run under Linux operating system.
 
 3. Clone this package to folder called `CMdMD`, then `cd` into `CMdMD`, type this command:
 
-   ```
+   ```julia
    include("CMdMD.jl")
    ```
 
@@ -57,12 +57,14 @@ In the example folder we provide some examples, check the `README.md` there for 
 
 ## Run
 
-### How to run CM-d-MD
+1. How to run CM-d-MD
 
    ```julia
    include("/path/to/CM-d-MD/CMdMD.jl")
    cmdmdrun("input_file")
    ```
+
+2. Configure file
 
 ## Problems
 
