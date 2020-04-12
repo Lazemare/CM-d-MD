@@ -55,6 +55,15 @@ CM-d-MD could only run under Linux operating system.
 
 In the example folder we provide some examples, check the `README.md` there for more information about how to work with CM-d-MD.
 
+## Run
+
+### How to run CM-d-MD
+
+   ```julia
+   include("/path/to/CM-d-MD/CMdMD.jl")
+   cmdmdrun("input_file")
+   ```
+
 ## Problems
 
 The Koopman reweighting scheme do not work by now, please use default reweighting scheme.
