@@ -51,10 +51,6 @@ CM-d-MD could only run under Linux operating system.
 
    This will load the CM-d-MD codes and show the CM-d-MD version.
 
-## Examples
-
-In the example folder we provide some examples, check the `README.md` there for more information about how to work with CM-d-MD.
-
 ## Run
 
 1. How to run CM-d-MD
@@ -106,6 +102,10 @@ In the example folder we provide some examples, check the `README.md` there for 
    `LagTime`: lag time of commute map or TICA calculation.
    
    `Frequency`: frequency of loading the trajectories.
+
+## Examples
+
+In the example folder we provide some examples. Brfore run any examples, don't forget to modify paths in `cmdrun.conf`, you should always use absolute paths.
 
 ## Problems
 
