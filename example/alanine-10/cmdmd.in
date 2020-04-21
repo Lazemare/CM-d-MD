@@ -1,0 +1,20 @@
+############# MD parameters #############
+NAMDConfigureFile             cmdrun.conf
+Iterations                    100
+Steps                         25000
+DCDFreq                       10
+Nproc                         2
+GPU                           "0"
+
+############# map parameters #############
+Selection                    "all"
+OrderParameter               "rmsd"
+AlignReference               "all"
+RMSDRegionSelection          "all"
+RMSDStructureSelection       "all"
+RMSDPrecision                "atoms"
+StretchPrecision             "residues"
+StretchFactor                1.18
+CommuteMap                   true
+LagTime                      50
+frequency                    1
