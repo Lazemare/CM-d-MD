@@ -105,7 +105,7 @@ CM-d-MD could only run under Linux operating system.
 
 ## Examples
 
-In the example folder we provide some examples. Brfore run any examples, don't forget to modify paths in `cmdrun.conf`, you should always use absolute paths.
+In the example folder we provide some examples. Before running any examples, don't forget to modify paths in `cmdrun.conf`, you should always use absolute paths.
 
 ## Problems
 
