@@ -113,7 +113,6 @@ mutable struct MDsystem
     stretchprecision::String
     stretchfactor::Float64
     # Map parameter
-    method::String
     freq::Int
     commutemap::Bool
     lag::Int
