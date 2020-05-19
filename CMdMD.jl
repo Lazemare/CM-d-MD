@@ -13,7 +13,7 @@ using DelimitedFiles
 __version__ = "0.0.2"
 __author__ = "Lazemare"
 __path__ = "$(@__DIR__)"
-__file__ = "$(@__DIR__)/CMdMD.jl"
+__file__ = "$__path__/CMdMD.jl"
 
 # PyObject python module mdtraj
 md = pyimport("mdtraj")
@@ -113,6 +113,7 @@ mutable struct MDsystem
     stretchprecision::String
     stretchfactor::Float64
     # Map parameter
+    method::String
     freq::Int
     commutemap::Bool
     lag::Int
@@ -122,20 +123,20 @@ end
 
 # Include files
 # IOs
-include("$(@__DIR__)/io/traj.jl")
-include("$(@__DIR__)/io/parser.jl")
-include("$(@__DIR__)/io/namd_conf.jl")
+include("$__path__/io/traj.jl")
+include("$__path__/io/parser.jl")
+include("$__path__/io/namd_conf.jl")
 # Core functions
-include("$(@__DIR__)/core/cmap.jl")
-include("$(@__DIR__)/core/pick.jl")
-include("$(@__DIR__)/core/rmsd.jl")
-include("$(@__DIR__)/core/position.jl")
-include("$(@__DIR__)/core/distance.jl")
-include("$(@__DIR__)/core/stretch.jl")
+include("$__path__/core/cmap.jl")
+include("$__path__/core/pick.jl")
+include("$__path__/core/rmsd.jl")
+include("$__path__/core/position.jl")
+include("$__path__/core/distance.jl")
+include("$__path__/core/stretch.jl")
 # Main calculation loop
-include("$(@__DIR__)/md/run.jl")
+include("$__path__/md/run.jl")
 # Helper functions
-include("$(@__DIR__)/core/matrix.jl")
+include("$__path__/core/matrix.jl")
 
 # export functions
 export
